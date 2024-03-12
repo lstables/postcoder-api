@@ -23,6 +23,7 @@ composer install
 
 
 Add `POSTCODER_API_KEY=XXX-XX-XXXX` to your `.env`
+
 ---
 
 After creating a user in your SQLite Database, visit your url followed by: `/api/sanctum/token`
