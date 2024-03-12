@@ -14,9 +14,9 @@ class ApiController extends Controller
     public function __invoke(Request $request)
     {
         // Keys
-        $apiKey = "PCW45-12345-12345-1234X";
+        $apiKey = config('services.postcoder.api_key');
         $countryCode = "UK";
-        $searchTerm = "NR1 1NE";
+        $searchTerm = $request->searchTerm;
 
         // Prepare URL
         $requestUrl = "https://ws.postcoder.com/pcw/$apiKey/address/$countryCode/" . urlencode($searchTerm);

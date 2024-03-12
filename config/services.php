@@ -31,4 +31,8 @@ return [
         ],
     ],
 
+    'postcoder' => [
+        'api_key' => env('POSTCODER_API_KEY'),
+    ],
+
 ];
